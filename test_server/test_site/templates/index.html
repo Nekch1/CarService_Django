@@ -11,6 +11,9 @@
     <div class="service-block">
         {% for service in services %}
             <div class="service">
+                {% if forloop.first %}
+                    <img class="sale-icon" src="{{sale_img}}" alt="">
+                {% endif%}
                 <img class="service-img" src = "{{service.img}}" alt = "{{service.title}}">
                 <p class="service-title">{{service.title}}</p>
                 <button class="service-button">Записаться</button>

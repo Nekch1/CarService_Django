@@ -4,6 +4,7 @@ from django.templatetags.static import static
 def index_page(request):
     context = {
         "page_name":"Автосервис",
+        "sale_img" : static("images/sale.png"),
         "services": [
             {
                 "title" : 'Замена масла',
